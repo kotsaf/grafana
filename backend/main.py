@@ -8,7 +8,7 @@ from litestar.openapi.plugins import ScalarRenderPlugin
 from litestar.exceptions import HTTPException
 import uvicorn
 
-# Настройка логирования
+# настройки логирования
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
