@@ -35,6 +35,7 @@ async def return_status(
 
 prometheus_config = PrometheusConfig()
 
+# приложение
 app = Litestar(
     route_handlers=[root, return_status, PrometheusController],
     middleware=[prometheus_config.middleware],
