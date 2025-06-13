@@ -16,6 +16,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
+# основная ручка
 @get("/")
 async def root() -> str:
     return "root"
