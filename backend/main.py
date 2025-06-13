@@ -21,6 +21,7 @@ logger = logging.getLogger(__name__)
 async def root() -> str:
     return "root"
 
+# статус ручка
 @get("/status/{status_code:int}")
 async def return_status(
     status_code: int,
